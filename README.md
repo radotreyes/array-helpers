@@ -1,5 +1,5 @@
 # array-helpers
-## Example
+## Examples
 ```js
 var arr = Array.fromRange(1, 4) // output: [ 1, 2, 3, 4 ]
 
