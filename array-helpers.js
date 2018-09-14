@@ -26,21 +26,6 @@ module.exports = (function() {
     return this.filter(element => deepEqual(element, member)).length
   }
 
-  Array.prototype.append = function append() {
-    var arr = Array.from(this)
-    for (member of arguments) {
-      arr.push(member)
-    }
-
-    return arr
-  }
-
-  Array.prototype.extend = function extend() {
-    for (member of arguments) {
-      this.push(member)
-    }
-  }
-
   Array.prototype.rotateLeft = function rotateLeft(count = 1) {
     var arr = Array.from(this)
     for (var i = 0; i < count; i++) {
