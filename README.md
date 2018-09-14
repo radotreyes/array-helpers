@@ -6,7 +6,10 @@ Helper methods for JavaScript arrays.
 
 ```js
 var arr = Array.fromRange(1, 5) // output: [ 1, 2, 3, 4, 5 ]
+var other = [1, '2']
 
+arr.isPure() // output: true
+other.isPure() // output: false
 arr.instancesOf(2) // output: 1
 arr.rotateLeft() // output: [ 2, 3, 4, 5, 1 ]
 arr.rotateLeft(2) // output: [ 3, 4, 5, 1, 2 ]
